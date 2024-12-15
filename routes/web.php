@@ -19,4 +19,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('books', BookController::class);
+Route::prefix('/dashboard')->middleware('auth')->group(function () {
+    Route::get('/', function () {
+        return view('dashboard.index');
+    })->name('dashboard');
+    Route::resource('books', BookController::class);
+});
