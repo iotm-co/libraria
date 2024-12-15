@@ -19,7 +19,7 @@ class BookSeeder extends Seeder
                 'author' => 'Andrea Hirata',
                 'description' => 'Kisah inspiratif sekelompok anak di Belitung yang penuh semangat untuk menggapai mimpi mereka meski dengan keterbatasan.',
                 'published_at' => '2005-09-01',
-                'cover' => 'https://upload.wikimedia.org/wikipedia/id/8/8e/Laskar_pelangi_sampul.jpg',
+                // 'cover' => 'https://upload.wikimedia.org/wikipedia/id/8/8e/Laskar_pelangi_sampul.jpg',
                 'status' => 'published',
             ],
             [
@@ -28,7 +28,7 @@ class BookSeeder extends Seeder
                 'author' => 'Tere Liye',
                 'description' => 'Petualangan Raib, Seli, dan Ali menjelajahi dunia paralel yang penuh misteri.',
                 'published_at' => '2014-01-01',
-                'cover' => 'https://cdn.gramedia.com/uploads/items/9786020332956_Bumi-New-Cover.jpg',
+                // 'cover' => 'https://cdn.gramedia.com/uploads/items/9786020332956_Bumi-New-Cover.jpg',
                 'status' => 'published',
             ],
             [
@@ -37,8 +37,8 @@ class BookSeeder extends Seeder
                 'author' => 'Pramoedya Ananta Toer',
                 'description' => 'Sebuah kisah epik perjuangan Minke melawan ketidakadilan di zaman kolonial.',
                 'published_at' => '1980-01-01',
-                'cover' => 'https://maisyafarhati.com/wp-content/uploads/2013/12/bumi-manusia.jpg',
-                'status' => 'published',
+                // 'cover' => 'https://maisyafarhati.com/wp-content/uploads/2013/12/bumi-manusia.jpg',
+                'status' => 'draft',
             ],
             [
                 'title' => 'Dilan: Dia adalah Dilanku Tahun 1990',
@@ -46,7 +46,7 @@ class BookSeeder extends Seeder
                 'author' => 'Pidi Baiq',
                 'description' => 'Kisah cinta remaja antara Dilan dan Milea yang penuh romantika dan kenangan.',
                 'published_at' => '2014-01-01',
-                'cover' => 'https://cdn.gramedia.com/uploads/items/9786027870864_dilan-1990.jpg',
+                // 'cover' => 'https://cdn.gramedia.com/uploads/items/9786027870864_dilan-1990.jpg',
                 'status' => 'published',
             ],
             [
@@ -55,8 +55,8 @@ class BookSeeder extends Seeder
                 'author' => 'Ahmad Fuadi',
                 'description' => 'Cerita tentang persahabatan dan perjuangan enam santri di pesantren untuk meraih mimpi besar.',
                 'published_at' => '2009-01-01',
-                'cover' => 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1249749162i/6688121.jpg',
-                'status' => 'published',
+                // 'cover' => 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1249749162i/6688121.jpg',
+                'status' => 'draft',
             ],
         ];
 
