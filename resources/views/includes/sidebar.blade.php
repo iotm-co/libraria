@@ -23,7 +23,7 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
-        Menu
+        Data Master
     </div>
 
     <!-- Nav Item - hero image -->
@@ -52,52 +52,22 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
-        Main
+        Other
     </div>
 
-    {{-- <li class="nav-item {{ Route::is('attendances*') ? 'active' : '' }}">
-        <a class="nav-link" href="{{ route('attendances.index') }}">
-            <i class="fas fa-fw fa-calendar"></i>
-            <span>Absensi</span></a>
-    </li> --}}
-    <!-- Divider -->
-    <hr class="sidebar-divider">
+    <!-- Nav Item - testimony -->
+    <li class="nav-item {{ Route::is('abouts*') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('abouts.index') }}">
+            <i class="fas fa-fw fa-book"></i>
+            <span>About Us</span></a>
+    </li>
 
-    <!-- Heading -->
-    <div class="sidebar-heading">
-        Data Master
-    </div>
+    <li class="nav-item {{ Route::is('testimonies*') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('testimonies.index') }}">
+            <i class="fas fa-fw fa-book"></i>
+            <span>Contact Us</span></a>
+    </li>
 
-    {{-- @if (auth()->user()->role !== 'kepala_sekolah' && auth()->user()->role !== 'guru')
-        <li class="nav-item {{ Route::is('academic-years*') ? 'active' : '' }}">
-            <a class="nav-link" href="{{ route('academic-years.index') }}">
-                <i class="fas fa-fw fa-calendar"></i>
-                <span>Tahun Ajaran</span></a>
-        </li>
-    @endif --}}
-
-    <!-- Nav Item - Pages Collapse Menu -->
-    {{-- <li
-            class="nav-item {{ Route::is('students*') || Route::is('studentX.index') || Route::is('studentXi.index') || Route::is('studentXii.index') ? 'active' : '' }}">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                aria-expanded="true" aria-controls="collapsePages">
-                <i class="fas fa-fw fa-users"></i>
-                <span>Data Siswa</span>
-            </a>
-            <div id="collapsePages"
-                class="collapse {{ Route::is('students*') || Route::is('studentX.index') || Route::is('studentXi.index') || Route::is('studentXii.index') ? 'show' : '' }}"
-                aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Menu:</h6>
-                    <a class="collapse-item {{ Route::is('studentX.index') ? 'active' : '' }}"
-                        href="{{ route('studentX.index') }}">Kelas X</a>
-                    <a class="collapse-item {{ Route::is('studentXi.index') ? 'active' : '' }}"
-                        href="{{ route('studentXi.index') }}">Kelas XI </a>
-                    <a class="collapse-item {{ Route::is('studentXii.index') ? 'active' : '' }}"
-                        href="{{ route('studentXii.index') }}">Kelas XII</a>
-                </div>
-            </div>
-        </li> --}}
 
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
