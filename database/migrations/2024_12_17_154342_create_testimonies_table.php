@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('carousel_images', function (Blueprint $table) {
+        Schema::create('testimonies', function (Blueprint $table) {
             $table->id();
-            $table->string('title')->nullable();
-            $table->string('image_path')->nullable();
-            $table->integer('order_position');
-            $table->boolean('is_active')->default(true);
+            $table->string('name');
+            $table->string('occupation');
+            $table->text('testimony');
+            $table->string('avatar')->nullable();
             $table->timestamps();
         });
     }
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('carousel_images');
+        Schema::dropIfExists('testimonies');
     }
 };

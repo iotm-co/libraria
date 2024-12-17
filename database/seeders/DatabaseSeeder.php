@@ -27,6 +27,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             BookSeeder::class,
             CarouselImageSeeder::class,
+            TestimonySeeder::class,
         ]);
     }
 }
