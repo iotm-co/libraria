@@ -27,8 +27,8 @@
     </div>
 
     <!-- Nav Item - books -->
-    <li class="nav-item {{ Route::is('books*') ? 'active' : '' }}">
-        <a class="nav-link" href="{{ route('books.index') }}">
+    <li class="nav-item {{ Route::is('carousel-images*') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('carousel-images.index') }}">
             <i class="fas fa-fw fa-book"></i>
             <span>Hero Image</span></a>
     </li>

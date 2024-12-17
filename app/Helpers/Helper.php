@@ -19,5 +19,20 @@ function getCoverBook($value)
 
 function getColorBook($value)
 {
-    return $value === 'published' ? 'bg-success text-white' : 'bg-secondary text-white';
+    return $value === 'published' ? 'bg-primary text-white' : 'bg-secondary text-white';
+}
+
+function getCaraouselImage($value)
+{
+    return $value ? asset('storage/' . $value) : asset('assets/img/hero-blank.jpg');
+}
+
+function getColorCarousel($value)
+{
+    return $value ? 'bg-primary text-white' : 'bg-secondary text-white';
+}
+
+function getStatusCarousel($value)
+{
+    return $value ? 'active' : 'inactive';
 }
