@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\CarouselImageController;
+use App\Http\Controllers\TestimonyController;
 use App\Models\Book;
 use Illuminate\Support\Facades\Route;
 
@@ -25,5 +26,6 @@ Route::prefix('/dashboard')->middleware('auth')->group(function () {
         return view('dashboard.index');
     })->name('dashboard');
     Route::resource('books', BookController::class);
+    Route::resource('testimonies', TestimonyController::class);
     Route::resource('carousel-images', CarouselImageController::class);
 });

@@ -26,7 +26,7 @@
         Menu
     </div>
 
-    <!-- Nav Item - books -->
+    <!-- Nav Item - hero image -->
     <li class="nav-item {{ Route::is('carousel-images*') ? 'active' : '' }}">
         <a class="nav-link" href="{{ route('carousel-images.index') }}">
             <i class="fas fa-fw fa-book"></i>
@@ -38,6 +38,13 @@
         <a class="nav-link" href="{{ route('books.index') }}">
             <i class="fas fa-fw fa-book"></i>
             <span>List Book</span></a>
+    </li>
+
+    <!-- Nav Item - testimony -->
+    <li class="nav-item {{ Route::is('testimonies*') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('testimonies.index') }}">
+            <i class="fas fa-fw fa-book"></i>
+            <span>List Testimony</span></a>
     </li>
 
     <!-- Divider -->

@@ -36,3 +36,8 @@ function getStatusCarousel($value)
 {
     return $value ? 'active' : 'inactive';
 }
+
+function getAvatar($value)
+{
+    return $value ? asset('storage/' . $value) : asset('assets/img/user.jpeg');
+}

@@ -24,7 +24,7 @@
                         {{ $item }}
                     </div>
                 @endforeach
-                <form action="{{ route('carousel-images.update', $carouselImage) }}" method="post"
+                <form action="{{ route('carousel-images.update', $carouselImage->id) }}" method="post"
                     enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
