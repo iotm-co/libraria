@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('author');
             $table->text('description')->nullable();
             $table->date('published_at');
-            $table->string('cover')->nullable();
+            $table->text('cover')->nullable();
             $table->string('status')->default('draft'); // draft, published, archived
             $table->timestamps();
         });

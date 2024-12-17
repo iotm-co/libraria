@@ -24,6 +24,9 @@ class DatabaseSeeder extends Seeder
             'email' => 'rizal@gmail.com',
         ]);
 
-        $this->call(BookSeeder::class);
+        $this->call([
+            BookSeeder::class,
+            CarouselImageSeeder::class,
+        ]);
     }
 }
