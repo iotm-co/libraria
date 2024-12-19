@@ -17,17 +17,20 @@ class DatabaseSeeder extends Seeder
         \App\Models\User::factory()->create([
             'name' => 'Kim',
             'email' => 'maman@gmail.com',
+            'password' => bcrypt('12345'),
         ]);
 
         \App\Models\User::factory()->create([
             'name' => 'Rizal',
             'email' => 'rizal@gmail.com',
+            'password' => bcrypt('12345'),
         ]);
 
         $this->call([
             BookSeeder::class,
             CarouselImageSeeder::class,
             TestimonySeeder::class,
+            ContactSeeder::class,
         ]);
     }
 }
