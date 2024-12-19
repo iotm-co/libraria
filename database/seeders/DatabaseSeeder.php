@@ -14,11 +14,23 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        \App\Models\User::factory()->create([
+            'name' => 'Kim',
+            'email' => 'maman@gmail.com',
+            'password' => bcrypt('12345'),
+        ]);
 
-        $this->call(BookSeeder::class);
+        \App\Models\User::factory()->create([
+            'name' => 'Rizal',
+            'email' => 'rizal@gmail.com',
+            'password' => bcrypt('12345'),
+        ]);
+
+        $this->call([
+            BookSeeder::class,
+            CarouselImageSeeder::class,
+            TestimonySeeder::class,
+            ContactSeeder::class,
+        ]);
     }
 }
