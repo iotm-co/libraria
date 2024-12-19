@@ -62,8 +62,8 @@
             <span>About Us</span></a>
     </li>
 
-    <li class="nav-item {{ Route::is('testimonies*') ? 'active' : '' }}">
-        <a class="nav-link" href="{{ route('testimonies.index') }}">
+    <li class="nav-item mb-5 {{ Route::is('contacts*') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('contacts.index') }}">
             <i class="fas fa-fw fa-book"></i>
             <span>Contact Us</span></a>
     </li>

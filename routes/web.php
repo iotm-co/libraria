@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\CarouselImageController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\TestimonyController;
 use App\Models\Book;
 use Illuminate\Support\Facades\Route;
@@ -28,6 +29,7 @@ Route::prefix('/dashboard')->middleware('auth')->group(function () {
     })->name('dashboard');
     Route::resource('books', BookController::class);
     Route::resource('abouts', AboutController::class);
+    Route::resource('contacts', ContactController::class);
     Route::resource('testimonies', TestimonyController::class);
     Route::resource('carousel-images', CarouselImageController::class);
 });
