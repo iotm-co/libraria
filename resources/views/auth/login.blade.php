@@ -1,4 +1,4 @@
-@extends('layouts.guest')
+@extends('layouts.guest', ['title' => 'Libraria | Login'])
 @section('content')
     <div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
 

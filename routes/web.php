@@ -4,6 +4,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\CarouselImageController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FrontsideController;
 use App\Http\Controllers\TestimonyController;
 use App\Models\Book;
 use Illuminate\Support\Facades\Route;
@@ -19,9 +20,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [FrontsideController::class, 'index'])->name('home');
+Route::get('/abouts', [FrontsideController::class, 'about'])->name('front.about');
+Route::get('/contacts', [FrontsideController::class, 'contact'])->name('front.contact');
 
 Route::prefix('/dashboard')->middleware('auth')->group(function () {
     Route::get('/', function () {
