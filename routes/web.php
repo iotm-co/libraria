@@ -24,6 +24,7 @@ Route::get('/', [FrontsideController::class, 'index'])->name('home');
 Route::get('/abouts', [FrontsideController::class, 'about'])->name('front.about');
 Route::get('/contacts', [FrontsideController::class, 'contact'])->name('front.contact');
 
+
 Route::prefix('/dashboard')->middleware('auth')->group(function () {
     Route::get('/', function () {
         return view('dashboard.index');
@@ -31,6 +32,7 @@ Route::prefix('/dashboard')->middleware('auth')->group(function () {
     Route::resource('books', BookController::class);
     Route::resource('abouts', AboutController::class);
     Route::resource('contacts', ContactController::class);
+    Route::post('contacts', [ContactController::class, 'store'])->name('contacts.store')->withoutMiddleware('auth');
     Route::resource('testimonies', TestimonyController::class);
     Route::resource('carousel-images', CarouselImageController::class);
 });
