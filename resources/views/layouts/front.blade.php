@@ -45,13 +45,13 @@
             <p class=""><b> &copy; IOTM 2024</b> | Privacy Policy</p>
             <div class="row">
                 <div class="col" d-flex align-items-center>
-                    <a href="#"><img class="w-100" src="image/icon/Instagram.svg" alt="instagram icon"></a>
+                    <a href="#"><img class="w-100" src="{{ asset('assets/img/icon/instagram.svg') }}" alt="instagram icon"></a>
                 </div>
                 <div class="col" d-flex align-items-center>
-                    <a href="#"><img class="w-100" src="image/icon/facebook.svg" alt="facebook icon"></a>
+                    <a href="#"><img class="w-100" src="{{ asset('assets/img/icon/facebook.svg') }}" alt="facebook icon"></a>
                 </div>
                 <div class="col" d-flex align-items-center>
-                    <a href="#"><img class="w-100" src="image/icon/whatsapp.svg" alt="linkedin icon"></a>
+                    <a href="#"><img class="w-100" src="{{ asset('assets/img/icon/linkedin.svg') }}" alt="linkedin icon"></a>
                 </div>
             </div>
         </div>
